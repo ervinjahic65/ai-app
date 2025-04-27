@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blizard Tech - Contact Us</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="icon" type="image/png" href="files/favicon.png" sizes="16x16">
+</head>
+<body class="min-h-screen bg-white text-gray-900">
+    <header class="bg-white shadow">
+        <div class="container mx-auto px-6 py-4">
+            <div class="flex items-center justify-between">
+                <a href="index.html" class="text-2xl font-bold text-gray-800">
+                    <img src="files/logo.png" alt="Logo" class="h-20">
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <div class="bg-gray-50 text-gray-900 pt-2">
+        <div class="max-w-4xl mx-auto px-4 py-8">
+
+            <h1 class="text-3xl md:text-4xl font-bold text-gray-800 mb-6 text-center">
+                Contact Us
+            </h1>
+
+            <form id="form" class="space-y-6 bg-white p-6 rounded-lg shadow">
+                <div>
+                    <label for="name" class="block text-sm font-medium text-gray-700">Name</label>
+                    <input type="text" id="name" name="name" required class="mt-1 block w-full border border-gray-300 rounded-md p-2 focus:ring-red-600 focus:border-red-600" />
+                </div>
+                <div>
+                    <label for="email" class="block text-sm font-medium text-gray-700">Email</label>
+                    <input type="email" id="email" name="email" required class="mt-1 block w-full border border-gray-300 rounded-md p-2 focus:ring-red-600 focus:border-red-600" />
+                </div>
+                <div>
+                    <label for="message" class="block text-sm font-medium text-gray-700">Message</label>
+                    <textarea id="message" name="message" rows="5" required class="mt-1 block w-full border border-gray-300 rounded-md p-2 focus:ring-red-600 focus:border-red-600"></textarea>
+                </div>
+                <div class="text-center">
+                    <button type="submit" class="px-6 py-2 bg-red-600 text-white font-semibold rounded-md hover:bg-red-700 focus:outline-none focus:ring-2 focus:ring-red-600">Send Message</button>
+                </div>
+            </form>
+
+        </div>
+
+        <footer class="bg-red-600/70 text-white py-8 mt-12">
+            <div class="max-w-6xl mx-auto px-4">
+                <div class="w-full">
+                    <div class="flex flex-col md:flex-row mb-4 md:mb-8 items-center justify-between flex-wrap gap-4 md:gap-0">
+                        <div class="mb-3 md:mb-0">
+                            <a href="index.html" rel="noopener noreferrer">
+                              <img src="files/logo.png" alt="logo" width="200" class="m-auto md:m-0">
+                            </a>
+                        </div>
+                        <div class="flex flex-col md:flex-row items-center justify-center md:justify-between text-center md:text-left gap-2 md:gap-0">
+                            <a href="privacy.html" target="_blank" rel="noopener noreferrer" class="mx-3 text-white hover:text-gray-200">
+                              Privacy Policy
+                            </a>
+                            <span class="hidden md:inline mx-1">-</span>
+                            <a href="terms.html" target="_blank" rel="noopener noreferrer" class="mx-3 text-white hover:text-gray-200">
+                              Terms and Conditions
+                            </a>
+                             <span class="hidden md:inline mx-1">-</span>
+                            <a href="about.html" target="_blank" rel="noopener noreferrer" class="mx-3 text-white hover:text-gray-200">
+                              About Us
+                            </a>
+                             <span class="hidden md:inline mx-1">-</span>
+                            <a href="contact.html" target="_blank" rel="noopener noreferrer" class="mx-3 text-white hover:text-gray-200 font-semibold">
+                              Contact Us
+                            </a>
+                        </div>
+                    </div>
+                    <div class="w-full text-left text-sm space-y-3">
+                        <p>
+                            <b>Website Disclaimer</b> <br>
+                            Education Blizard Tech provides educational services, references and links to third party information, including market data and economic services, as an educational service only and does not endorse any of these services. Education Blizard Tech is not liable for any loss or damage arising from reliance on the services and information provided. The accuracy or completeness of the information is not guaranteed. For further details, please see our <a href="terms.html" class="text-white hover:text-gray-900 underline font-medium" target="_blank">Terms and Conditions</a>.
+                        </p>
+                        <p>
+                            <b>Risk Warning</b><br>
+                            Trading or investing involves a high degree of risk and can result in the loss of all or significant funds. Such activities should be undertaken only with risk capital. Seek independent financial advice and familiarize yourself with the risks before making any financial decisions. Trading and investing are highly speculative and carry significant risk of loss. Success stories or examples presented on this website — including potential returns or market analysis — do not guarantee future results. There is no guarantee that others will achieve the same results.
+                        </p>
+                        <p>
+                            <b>Company</b> <br>
+                            SEC Registration No. - 0943581762 <br> 
+                            Address - 25th Floor, Ayala Tower One, Ayala Avenue, Makati City, 1226 Metro Manila, Philippines <br>
+                            Phone - +63 2 8531 6479 <br> 
+                        </p>
+                        <p class="mt-4">
+                          © 2025 Blizard Tech. All rights reserved.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script>
+        document.getElementById("form").addEventListener("submit", function (e) {
+            e.preventDefault();
+      
+            document.getElementById("form").innerHTML = '<img src="files/loading.gif" style="" width="80">';
+      
+            setTimeout(() => {
+                document.getElementById("form").innerHTML = '<p style="font-size: 24px; color:black; font-weight: 700;">Thank you for registering. A representative will contact you shortly.</p>';
+            }, 2000);
+        });
+    </script>
+</body>
+</html>
