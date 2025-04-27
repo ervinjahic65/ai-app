@@ -13,6 +13,10 @@
 form .hidden {
     display: none !important;
 }
+.logo-img {
+   width: 220px;
+   height: auto;
+}
 /*! tailwindcss v4.1.4 | MIT License | */
 @layer properties;
 @layer theme, base, components, utilities;
