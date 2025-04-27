@@ -371,7 +371,6 @@ button {
 }
 a {
   color: #e7000b;
-  cursor: pointer;
   text-decoration: underline;
 }
 a:hover {
