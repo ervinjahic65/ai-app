@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="fr"> <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blizard Tech - Contactez-nous</title> <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="icon" type="image/png" href="files/favicon.png" sizes="16x16">
+</head>
+<body class="min-h-screen bg-white text-gray-900">
+    <header class="bg-white shadow">
+        <div class="container mx-auto px-6 py-4">
+            <div class="flex items-center justify-between">
+                <a href="index.html" class="text-2xl font-bold text-gray-800">
+                    <img src="files/logo.png" alt="Logo" class="h-20">
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <div class="bg-gray-50 text-gray-900 pt-2">
+        <div class="max-w-4xl mx-auto px-4 py-8">
+
+            <h1 class="text-3xl md:text-4xl font-bold text-gray-800 mb-6 text-center">
+                Contactez-nous </h1>
+
+            <form id="form" class="space-y-6 bg-white p-6 rounded-lg shadow">
+                <div>
+                    <label for="name" class="block text-sm font-medium text-gray-700">Nom</label> <input type="text" id="name" name="name" required class="mt-1 block w-full border border-gray-300 rounded-md p-2 focus:ring-red-600 focus:border-red-600" />
+                </div>
+                <div>
+                    <label for="email" class="block text-sm font-medium text-gray-700">E-mail</label> <input type="email" id="email" name="email" required class="mt-1 block w-full border border-gray-300 rounded-md p-2 focus:ring-red-600 focus:border-red-600" />
+                </div>
+                <div>
+                    <label for="message" class="block text-sm font-medium text-gray-700">Message</label> <textarea id="message" name="message" rows="5" required class="mt-1 block w-full border border-gray-300 rounded-md p-2 focus:ring-red-600 focus:border-red-600"></textarea>
+                </div>
+                <div class="text-center">
+                    <button type="submit" class="px-6 py-2 bg-red-600 text-white font-semibold rounded-md hover:bg-red-700 focus:outline-none focus:ring-2 focus:ring-red-600">Envoyer le message</button> </div>
+            </form>
+
+        </div>
+
+        <footer class="bg-red-600/70 text-white py-8 mt-12">
+            <div class="max-w-6xl mx-auto px-4">
+                <div class="w-full">
+                    <div class="flex flex-col md:flex-row mb-4 md:mb-8 items-center justify-between flex-wrap gap-4 md:gap-0">
+                        <div class="mb-3 md:mb-0">
+                            <a href="index.html" rel="noopener noreferrer">
+                              <img src="files/logo.png" alt="logo" width="200" class="m-auto md:m-0">
+                            </a>
+                        </div>
+                        <div class="flex flex-col md:flex-row items-center justify-center md:justify-between text-center md:text-left gap-2 md:gap-0">
+                            <a href="privacy.html" target="_blank" rel="noopener noreferrer" class="mx-3 text-white hover:text-gray-200">
+                              Politique de confidentialité </a>
+                            <span class="hidden md:inline mx-1">-</span>
+                            <a href="terms.html" target="_blank" rel="noopener noreferrer" class="mx-3 text-white hover:text-gray-200">
+                              Conditions générales </a>
+                             <span class="hidden md:inline mx-1">-</span>
+                            <a href="about.html" target="_blank" rel="noopener noreferrer" class="mx-3 text-white hover:text-gray-200">
+                              À propos de nous </a>
+                             <span class="hidden md:inline mx-1">-</span>
+                            <a href="contact.html" target="_blank" rel="noopener noreferrer" class="mx-3 text-white hover:text-gray-200 font-semibold">
+                              Contactez-nous </a>
+                        </div>
+                    </div>
+                    <div class="w-full text-left text-sm space-y-3">
+                        <p>
+                            <b>Avis de non-responsabilité du site Web</b> <br> Education Blizard Tech fournit des services éducatifs, des références et des liens vers des informations de tiers, y compris des données de marché et des services économiques, à titre éducatif uniquement et n'approuve aucun de ces services. Education Blizard Tech n'est pas responsable de toute perte ou dommage résultant de la confiance accordée aux services et informations fournis. L'exactitude ou l'exhaustivité des informations n'est pas garantie. Pour plus de détails, veuillez consulter nos <a href="terms.html" class="text-white hover:text-gray-900 underline font-medium" target="_blank">Conditions générales</a>. </p>
+                        <p>
+                            <b>Avertissement sur les risques</b><br> Le trading ou l'investissement comporte un degré élevé de risque et peut entraîner la perte de la totalité ou d'une partie importante des fonds. De telles activités ne doivent être entreprises qu'avec du capital à risque. Demandez des conseils financiers indépendants et familiarisez-vous avec les risques avant de prendre des décisions financières. Le trading et l'investissement sont hautement spéculatifs et comportent un risque de perte important. Les réussites ou les exemples présentés sur ce site Web — y compris les rendements potentiels ou l'analyse de marché — ne garantissent pas les résultats futurs. Rien ne garantit que d'autres obtiendront les mêmes résultats. </p>
+                         <p>
+                            <b>Société</b> <br>
+                            SIRET : 0043 00010 <br>
+                            Adresse - 15 Rue de la Paix, 75002 Paris, France <br>
+                            Téléphone - +33 1 42 96 00 00 <br> 
+                        </p>
+                        <p class="mt-4">
+                          © 2025 Blizard Tech. Tous droits réservés. </p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script>
+        document.getElementById("form").addEventListener("submit", function (e) {
+            e.preventDefault();
+
+            // Afficher l'image de chargement
+            var formElement = document.getElementById("form");
+            formElement.innerHTML = '<div style="display: flex; justify-content: center; align-items: center; min-height: 150px;"><img src="files/loading.gif" alt="Chargement..." width="80"></div>'; // Added alt text and centering
+
+            setTimeout(() => {
+                // Afficher le message de remerciement
+                formElement.innerHTML = '<p style="font-size: 24px; color:black; font-weight: 700; text-align: center; min-height: 150px; display: flex; justify-content: center; align-items: center;">Merci de vous être inscrit. Un représentant vous contactera sous peu.</p>'; // Traduit et centré
+            }, 2000);
+        });
+    </script>
+</body>
+</html>
